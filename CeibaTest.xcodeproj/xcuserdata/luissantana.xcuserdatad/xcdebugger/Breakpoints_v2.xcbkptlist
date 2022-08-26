@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C36A2EDD-9D7A-49B4-AE4A-B308C8584F74"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37A55B59-9DDE-4DF4-BE02-9BB39A537A0A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaUTTest/WebServiceUT.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "testGetAllUsers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E35F186D-2221-46E8-8729-E58114C21C91"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaUTTest/PostViewModelUT.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "testGetPostByUserId()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E35F186D-2221-46E8-8729-E58114C21C91 - 21cd8371a6df1829"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CeibaUTTest.PostViewModelUT.testGetPostByUserId() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/PostViewModelUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "412">
+               </Location>
+               <Location
+                  uuid = "E35F186D-2221-46E8-8729-E58114C21C91 - 21cd8371a6df1829"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CeibaUTTest.PostViewModelUT.testGetPostByUserId() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/PostViewModelUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "E35F186D-2221-46E8-8729-E58114C21C91 - 21cd8371a6df1848"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CeibaUTTest.PostViewModelUT.testGetPostByUserId() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/PostViewModelUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "228">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57A5A50D-8040-427B-B714-4596DF666C18"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaTest/WebService/WebService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getPost(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A4D4800-8C2C-4BBB-A7D8-68BB0871F1FD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaTest/WebService/WebService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "getPost(forUser:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79F9EF44-2FC3-44DF-B0B0-36C0CA62B436"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaTest/WebService/WebService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "getPost(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CE24743-487A-499C-B1BF-F12BC856FD64"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaUTTest/WebServiceUT.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "testGetPostsByUser()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53495563-A67B-48BA-8EC9-CB7BCEDFBC06"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaUTTest/WebServiceUT.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "WebServiceUT"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2EA9AC97-9B69-4DED-8441-7EE7D924B568"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaUTTest/WebServiceUT.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "testGetPostsByUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2EA9AC97-9B69-4DED-8441-7EE7D924B568 - ea8846c6ea800e22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CeibaUTTest.WebServiceUT.testGetPostsByUser() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/WebServiceUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "2EA9AC97-9B69-4DED-8441-7EE7D924B568 - ea8846c6ea800e60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CeibaUTTest.WebServiceUT.testGetPostsByUser() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/WebServiceUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "228">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FE7DB94-5F73-4A21-8F8A-1FAD0B2D50F8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaUTTest/PostViewModelUT.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "setUpWithError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8EC70A01-4B57-4674-B743-893A156531D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaUTTest/WebServiceUT.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "testGetAllPosts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8EC70A01-4B57-4674-B743-893A156531D0 - 93ed491b9bd515a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;CeibaTest.UserPost&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CeibaUTTest.WebServiceUT.testGetAllPosts() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/WebServiceUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "8EC70A01-4B57-4674-B743-893A156531D0 - 93ed491b9bd51584"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;CeibaTest.UserPost&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CeibaUTTest.WebServiceUT.testGetAllPosts() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/WebServiceUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13976C04-7F1F-48A2-A5A9-CA36C3F91FDB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaUTTest/PostViewModelUT.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "testExample()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "13976C04-7F1F-48A2-A5A9-CA36C3F91FDB - 74e0920638e5fe83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CeibaUTTest.PostViewModelUT.testExample() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/PostViewModelUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "13976C04-7F1F-48A2-A5A9-CA36C3F91FDB - 692a228c1718b90b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CeibaUTTest.PostViewModelUT.testExample() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/PostViewModelUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "724">
+               </Location>
+               <Location
+                  uuid = "13976C04-7F1F-48A2-A5A9-CA36C3F91FDB - 692a228c1718b928"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CeibaUTTest.PostViewModelUT.testExample() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/PostViewModelUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "768">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C3B48DD-4261-4A5D-A072-CD0AA13A6345"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaUTTest/PostViewModelUT.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "testExample()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5C3B48DD-4261-4A5D-A072-CD0AA13A6345 - 692a228c1718b887"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CeibaUTTest.PostViewModelUT.testExample() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/PostViewModelUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "5C3B48DD-4261-4A5D-A072-CD0AA13A6345 - 692a228c1718b887"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CeibaUTTest.PostViewModelUT.testExample() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/PostViewModelUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "5C3B48DD-4261-4A5D-A072-CD0AA13A6345 - 692a228c1718b8a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CeibaUTTest.PostViewModelUT.testExample() throws -&gt; ()"
+                  moduleName = "CeibaUTTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaUTTest/PostViewModelUT.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B9B3DD1-C87F-4552-B1DE-8B894AAA7C6A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaTest/ViewModels/PostsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getPosts(forUser:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3B9B3DD1-C87F-4552-B1DE-8B894AAA7C6A - 46eb43ffb2a98409"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;CeibaTest.UserPost&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CeibaTest.PostsViewModel.getPosts(forUser: Swift.Int) -&gt; ()"
+                  moduleName = "CeibaTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaTest/ViewModels/PostsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "3B9B3DD1-C87F-4552-B1DE-8B894AAA7C6A - 46eb43ffb2a98409"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;CeibaTest.UserPost&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CeibaTest.PostsViewModel.getPosts(forUser: Swift.Int) -&gt; ()"
+                  moduleName = "CeibaTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaTest/ViewModels/PostsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "228">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D901866C-DA4B-4A0A-8FF8-3F26A6885824"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CeibaTest/ViewModels/PostsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getPost()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D901866C-DA4B-4A0A-8FF8-3F26A6885824 - fbc10319ef6c56aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;CeibaTest.UserPost&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CeibaTest.PostsViewModel.getPost() -&gt; ()"
+                  moduleName = "CeibaTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaTest/ViewModels/PostsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "D901866C-DA4B-4A0A-8FF8-3F26A6885824 - fbc10319ef6c56aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;CeibaTest.UserPost&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CeibaTest.PostsViewModel.getPost() -&gt; ()"
+                  moduleName = "CeibaTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luissantana/Desktop/MIS%20CURSOS/SwiftUI/CeibaTest/CeibaTest/ViewModels/PostsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "228">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
