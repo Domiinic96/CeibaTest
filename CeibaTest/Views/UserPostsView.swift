@@ -47,13 +47,14 @@ struct UserPostsView: View {
                                 .padding()
                             
                             Text(post.body)
+                                .padding()
                         }.padding()
-                            .background(.white)
+                            .frame(width: Constants.screenSize.width * 0.9)
+                            .background(Color.white)
                             .clipped()
-                            .frame(width: Constants.screenSize.width)
+                            .padding()
                             .shadow(color: .black, radius: 2, x: 0, y: 0)
                             
-                            .padding()
                     }
                 }
         }.navigationTitle("Publicaciones")
