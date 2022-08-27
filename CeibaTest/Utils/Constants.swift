@@ -16,5 +16,6 @@ class Constants{
     static let urlPostFilter = "https://jsonplaceholder.typicode.com/posts?userId="
     static let appColor = Color("appColor")
     static let screenSize = UIScreen.main.bounds
+    static let key = "userData"
     
 }

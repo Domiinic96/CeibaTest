@@ -14,23 +14,11 @@ class PostsViewModel: ObservableObject{
     init() {
         usersPots = [UserPost]()
         webservice = WebService()
-        getPost()
     }
-    
     
     func getPosts(forUser userId: Int){
         
         webservice.getPost(forUser: userId) { posts, error in
-            if let posts = posts, error == nil {
-                DispatchQueue.main.async {
-                    self.usersPots = posts
-                }
-            }
-        }
-    }
-    
-    private func getPost(){
-        webservice.getPost { posts, error in
             if let posts = posts, error == nil {
                 DispatchQueue.main.async {
                     self.usersPots = posts

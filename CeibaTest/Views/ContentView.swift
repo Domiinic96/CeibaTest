@@ -71,7 +71,6 @@ struct ContentView: View {
                                 }
                             }.padding()
                                 .background(.white)
-                               
                                 .frame(width: Constants.screenSize.width * 0.9, height: Constants.screenSize.height * 0.15)
                                 .clipped()
                                 .shadow(color: .black, radius: 2, x: 0, y: 0)
@@ -82,9 +81,14 @@ struct ContentView: View {
                 }
                 
             }.frame(alignment: .top)
-                .navigationTitle("Prueba de Ingreso")
                 .navigationBarTitleDisplayMode(.inline)
-                .overlay(!self.userViewModel.users.isEmpty ? AnyView(EmptyView()) : AnyView(progressView))
+                .toolbar(content: {
+                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading, content: {
+                        Text("Prueba de ingreso").foregroundColor(Color.white)
+                    })
+                })
+                .overlay(!self.userViewModel.users.isEmpty ? AnyView(EmptyView()) : AnyView(ProgressView2()))
+            
         }
     }
     
@@ -94,7 +98,6 @@ struct ContentView: View {
                 .foregroundColor(Constants.appColor)
                 .font(.system(size: 15))
         TextField("", text: $searchTerm)
-            //.padding([.top, .trailing, .leading], 40)
         
         Rectangle().fill(Constants.appColor)
             .frame(width: nil, height: 1)
@@ -105,18 +108,6 @@ struct ContentView: View {
         VStack{
             Text("List is empty").foregroundColor(Constants.appColor)
         }
-    }
-    
-    var progressView: some View{
-        VStack{
-        ProgressView("Loading")
-            .tint(.green)
-            
-        }.frame(width: 150, height: 150)
-            .background(Color.white)
-            .cornerRadius(10)
-            .shadow(color: .black, radius: 2, x: 0, y: 0)
-            
     }
 }
 

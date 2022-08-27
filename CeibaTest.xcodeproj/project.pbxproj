@@ -20,6 +20,7 @@
 		FB96383C28B9231600F06EEA /* UserPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96383B28B9231600F06EEA /* UserPostsView.swift */; };
 		FB96383E28B92D4500F06EEA /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96383D28B92D4500F06EEA /* ImageView.swift */; };
 		FBD58BCA28B9465F00F3FBB1 /* WebServiceUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD58BC928B9465F00F3FBB1 /* WebServiceUT.swift */; };
+		FBD58BCE28B996B800F3FBB1 /* ProgressView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD58BCD28B996B800F3FBB1 /* ProgressView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		FB96383D28B92D4500F06EEA /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		FBD58BBE28B9437700F3FBB1 /* CeibaUTTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeibaUTTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD58BC928B9465F00F3FBB1 /* WebServiceUT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceUT.swift; sourceTree = "<group>"; };
+		FBD58BCD28B996B800F3FBB1 /* ProgressView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				FB96381E28B906A600F06EEA /* ContentView.swift */,
 				FB96383B28B9231600F06EEA /* UserPostsView.swift */,
 				FB96383D28B92D4500F06EEA /* ImageView.swift */,
+				FBD58BCD28B996B800F3FBB1 /* ProgressView2.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				FB96382E28B9089100F06EEA /* UserPost.swift in Sources */,
 				FB96383828B90D0F00F06EEA /* UserViewModel.swift in Sources */,
 				FB96381D28B906A600F06EEA /* CeibaTestApp.swift in Sources */,
+				FBD58BCE28B996B800F3FBB1 /* ProgressView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

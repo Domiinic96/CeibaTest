@@ -19,19 +19,17 @@ class UserViewModel: ObservableObject {
     
     private func getUsers(){
         
-        guard let _ = UserDefaults.standard.value(forKey: "userData") else{
+        guard let _ = UserDefaults.standard.value(forKey: Constants.key) else{
             webservice.getUsers { users, error in
-                
                 if let users = users, error == nil {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         do {
                             try self.saveUsersInfo(value: users)
                         } catch  {
-                            print(error)
+                            print(error.localizedDescription)
                         }
                         return
                     }
-                    
                 }
             }
             return
@@ -40,23 +38,22 @@ class UserViewModel: ObservableObject {
     }
     
     private func saveUsersInfo(value: [UserModel]) throws {
-        print(value)
         do {
             let placesData =  try JSONEncoder().encode(value)
-            UserDefaults.standard.set(placesData, forKey: "userData")
+            UserDefaults.standard.set(placesData, forKey: Constants.key)
             getUserinfo()
         } catch  {
-            print(error)
+            print(error.localizedDescription)
         }
     }
     
     private func getUserinfo()  {
-        guard let orderData = UserDefaults.standard.data(forKey: "userData") else { return }
+        guard let orderData = UserDefaults.standard.data(forKey: Constants.key) else { return }
        
         do {
             self.users = try JSONDecoder().decode([UserModel].self, from: orderData)
         } catch  {
-            print(error)
+            print(error.localizedDescription)
         }
     }
 

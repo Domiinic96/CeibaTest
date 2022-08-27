@@ -57,21 +57,9 @@ struct UserPostsView: View {
                             
                     }
                 }
-        }.overlay(postsViewModel.usersPots.isEmpty ? AnyView(progressView) : AnyView(EmptyView()))
+        }.overlay(postsViewModel.usersPots.isEmpty ? AnyView(ProgressView2()) : AnyView(EmptyView()))
         .navigationTitle("Publicaciones")
         
-    }
-    
-    var progressView: some View{
-        VStack{
-        ProgressView("Loading")
-            .tint(.green)
-            
-        }.frame(width: 150, height: 150)
-            .background(Color.white)
-            .cornerRadius(10)
-            .shadow(color: .black, radius: 2, x: 0, y: 0)
-            
     }
     
     private func searchPosts(id: Int){

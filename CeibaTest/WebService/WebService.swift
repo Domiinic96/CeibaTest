@@ -20,6 +20,7 @@ class WebService{
         URLSession.shared.dataTask(with: request) { data, response, error in
             
             if let error = error {
+                print(error.localizedDescription)
                 completion(nil, error)
             }
             
@@ -34,7 +35,7 @@ class WebService{
                             users = userResult
                             completion(users, nil)
                         } catch let error as NSError {
-                            print( error.localizedDescription)
+                            print(error.localizedDescription)
                             completion(nil, error)
                         }
                     }
@@ -55,6 +56,7 @@ class WebService{
         URLSession.shared.dataTask(with: request) { data, response, error in
             
             if let error = error {
+                print(error.localizedDescription)
                 completion(nil, error)
             }
             
@@ -68,7 +70,7 @@ class WebService{
                             usersPosts = userPostResult
                             completion(usersPosts, nil)
                         } catch let error as NSError {
-                            print( error.localizedDescription)
+                            print(error.localizedDescription)
                             completion(nil, error)
                         }
                     }
@@ -88,6 +90,7 @@ class WebService{
         URLSession.shared.dataTask(with: request) { data, response, error in
             
             if let error = error {
+                print(error.localizedDescription)
                 completion(nil, error)
             }
             
