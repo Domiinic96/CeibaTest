@@ -22,19 +22,20 @@ struct UserPostsView: View {
             
             VStack(alignment: .leading){
                 HStack{
-                ImageView(imageName: "person")
+                    ImageView(imageName: Constants.personImageName)
                 Text(user.name).font(.system(size: 18, weight: .semibold, design: .default))
                 }
                 HStack{
-               ImageView(imageName: "envelope.fill")
+                    ImageView(imageName: Constants.letterImageName)
                 Text(user.email).font(.system(size: 18, weight: .semibold, design: .default))
                 }
                 HStack{
-                ImageView(imageName: "phone.fill")
+                    ImageView(imageName: Constants.phoneImageName)
                 Text(user.phone).font(.system(size: 18, weight: .semibold, design: .default))
                 }
             }
                 
+            if postsViewModel.usersPots.count > 0{
                 ScrollView{
                     
                     ForEach(postsViewModel.usersPots, id: \.id) { post in
@@ -57,15 +58,49 @@ struct UserPostsView: View {
                             
                     }
                 }
-        }.overlay(postsViewModel.usersPots.isEmpty ? AnyView(ProgressView2()) : AnyView(EmptyView()))
-        .navigationTitle("Publicaciones")
-        
+            }else{
+                
+                Spacer()
+                Text(postsViewModel.error2?.localizedDescription ?? "")
+                Spacer()
+            }
+            
+        }.toolbar(content: {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Image(systemName: Constants.reloadIcon).onTapGesture {
+                    self.postsViewModel.getPosts(forUser: user.id)
+                }
+            }
+        })
+        .overlay(postsViewModel.isFetchingData ? AnyView(ProgressView2()) : AnyView(EmptyView()))
+            .navigationTitle(Constants.postsNavBarDescription)
+            .alert(Text(Constants.error), isPresented: self.$postsViewModel.presentAlert) {
+                Text(self.postsViewModel.error2?.localizedDescription ?? "")
+                Button {
+                    return
+                } label: {
+                    Text(Constants.OK)
+                }
+                
+                Button {
+                    self.postsViewModel.getPosts(forUser: user.id)
+                } label: {
+                    Text(Constants.RELOAD)
+                }
+
+
+            } message: {
+                Text(self.postsViewModel.error2?.localizedDescription ?? "")
+            }
+   
     }
     
     private func searchPosts(id: Int){
         
         postsViewModel.getPosts(forUser: id)
     }
+    
+    
 }
 
 struct UserPostsView_Previews: PreviewProvider {

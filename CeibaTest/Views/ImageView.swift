@@ -16,6 +16,6 @@ struct ImageView: View {
 
 struct ImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageView(imageName: "person")
+        ImageView(imageName: Constants.personImageName)
     }
 }

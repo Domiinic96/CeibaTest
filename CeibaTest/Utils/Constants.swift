@@ -17,5 +17,18 @@ class Constants{
     static let appColor = Color("appColor")
     static let screenSize = UIScreen.main.bounds
     static let key = "userData"
+    static let navigationBarTittle = "Prueba de ingreso"
+    static let searchUser = "Busar usuario"
+    static let emptyList = "List is empty"
+    static let watchPosts = "VER PUBLICACIONES"
+    static let phoneImageName = "phone.fill"
+    static let letterImageName = "envelope.fill"
+    static let personImageName = "person"
+    static let postsNavBarDescription = "Publicaciones"
+    static let loadingMessage = "Loading"
+    static let error = "Error"
+    static let OK = "Ok"
+    static let RELOAD = "Reload"
+    static let reloadIcon = "arrow.triangle.2.circlepath.circle"
     
 }

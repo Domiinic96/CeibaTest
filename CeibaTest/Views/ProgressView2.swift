@@ -10,7 +10,7 @@ import SwiftUI
 struct ProgressView2: View {
     var body: some View {
         VStack{
-            ProgressView("Loading")
+            ProgressView(Constants.loadingMessage)
             .tint(.green)
             
         }.frame(width: 150, height: 150)

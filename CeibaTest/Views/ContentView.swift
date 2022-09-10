@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     let appearance = UINavigationBarAppearance()
-    @ObservedObject var userViewModel = UserViewModel()
+    @ObservedObject var userViewModel: UserViewModel = UserViewModel()
     @State var searchTerm = ""
     
     
@@ -23,12 +23,9 @@ struct ContentView: View {
     }
     var body: some View {
         
-        
         let resultList = searchTerm.isEmpty ? userViewModel.users : userViewModel.users.filter({ $0.name.localizedCaseInsensitiveContains(searchTerm)})
         
         return NavigationView{
-            
-            
             VStack{
                 serchView.offset(y: resultList.isEmpty ? Constants.screenSize.height * -0.36 : 0)
                 
@@ -36,25 +33,21 @@ struct ContentView: View {
                     listEmptyMessage
                 }else{
                     ScrollView{
-                        
-                        
                         ForEach(resultList, id: \.id){ user in
-                            
                             HStack{
                                 VStack(alignment:.leading){
                                     Text(user.name)
                                         .font(.system(size: 18, weight: .bold, design: .default))
-                                        .foregroundColor(Color("appColor"))
+                                        .foregroundColor(Constants.appColor)
                                     HStack{
-                                       ImageView(imageName: "phone.fill")
+                                        ImageView(imageName: Constants.phoneImageName)
                                         Text(user.phone)
                                     }
                                     
                                     HStack{
-                                        ImageView(imageName: "envelope.fill")
+                                        ImageView(imageName: Constants.letterImageName)
                                         Text(user.email)
                                     }
-                                    
                                 }
                                 Spacer()
                                 VStack{
@@ -62,12 +55,10 @@ struct ContentView: View {
                                     NavigationLink {
                                         UserPostsView(user)
                                     } label: {
-                                        Text("VER PUBLICACIONES")
+                                        Text(Constants.watchPosts)
                                             .font(.system(size: 12))
-                                            .foregroundColor(Color("appColor"))
-                                        
+                                            .foregroundColor(Constants.appColor)
                                     }
-                                    
                                 }
                             }.padding()
                                 .background(.white)
@@ -75,26 +66,69 @@ struct ContentView: View {
                                 .clipped()
                                 .shadow(color: .black, radius: 2, x: 0, y: 0)
                                 .padding()
+                                .animation(Animation.spring(), value: self.searchTerm)
+                               
                         }
-                        
                     }
                 }
-                
             }.frame(alignment: .top)
+
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar(content: {
                     ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading, content: {
-                        Text("Prueba de ingreso").foregroundColor(Color.white)
+                        MessageView(message:Constants.navigationBarTittle).foregroundColor(Color.white)
+                    })
+                    
+                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing, content: {
+                        reloadButton2
                     })
                 })
-                .overlay(!self.userViewModel.users.isEmpty ? AnyView(EmptyView()) : AnyView(ProgressView2()))
-            
+                .overlay(!self.userViewModel.isProgressing  ? AnyView(EmptyView()) : AnyView(ProgressView2()))
+                .overlay(self.userViewModel.presentAlert ? AnyView(Text("\(userViewModel.error2!.localizedDescription.description)")) : AnyView(EmptyView()))
+                .alert(Text(Constants.error), isPresented: self.$userViewModel.presentAlert) {
+                    
+                    MessageView(message:self.userViewModel.error2?.localizedDescription ?? "")
+                    
+                    okButton
+                    
+                    reloadButton
+
+                } message: {
+                    MessageView(message:self.userViewModel.error2?.localizedDescription ?? "")
+                }
         }
+    }
+        
+    
+    var okButton: some View{
+        Button {
+            
+        } label: {
+            Text(Constants.OK)
+        }
+    }
+    
+    var reloadButton: some View{
+        Button {
+            self.userViewModel.getUsers()
+        } label: {
+            Text(Constants.RELOAD)
+        }
+    }
+    
+    var reloadButton2: some View{
+        Button {
+            self.userViewModel.getUsers()
+        } label: {
+            Image(systemName: Constants.reloadIcon)
+                .foregroundColor(.white)
+        }.disabled(!self.userViewModel.users.isEmpty)
+            .opacity(!self.userViewModel.users.isEmpty ? 1 : 0.5)
     }
     
     var serchView: some View{
         VStack(alignment:.leading){
-        Text("Busar usuario")
+            Text(Constants.searchUser)
                 .foregroundColor(Constants.appColor)
                 .font(.system(size: 15))
         TextField("", text: $searchTerm)
@@ -106,7 +140,7 @@ struct ContentView: View {
     
     var listEmptyMessage: some View{
         VStack{
-            Text("List is empty").foregroundColor(Constants.appColor)
+            MessageView(message:Constants.emptyList).foregroundColor(Constants.appColor)
         }
     }
 }

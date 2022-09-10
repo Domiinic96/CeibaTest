@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB6844C428CBFEF900D7F5BA /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6844C328CBFEF900D7F5BA /* ApiClient.swift */; };
 		FB96381D28B906A600F06EEA /* CeibaTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96381C28B906A600F06EEA /* CeibaTestApp.swift */; };
 		FB96381F28B906A600F06EEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96381E28B906A600F06EEA /* ContentView.swift */; };
 		FB96382128B906A700F06EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB96382028B906A700F06EEA /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		FB96383E28B92D4500F06EEA /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96383D28B92D4500F06EEA /* ImageView.swift */; };
 		FBD58BCA28B9465F00F3FBB1 /* WebServiceUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD58BC928B9465F00F3FBB1 /* WebServiceUT.swift */; };
 		FBD58BCE28B996B800F3FBB1 /* ProgressView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD58BCD28B996B800F3FBB1 /* ProgressView2.swift */; };
+		FBDF3FE728CBEFE200D91BA9 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF3FE628CBEFE200D91BA9 /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB6844C328CBFEF900D7F5BA /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		FB96381928B906A600F06EEA /* CeibaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeibaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB96381C28B906A600F06EEA /* CeibaTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaTestApp.swift; sourceTree = "<group>"; };
 		FB96381E28B906A600F06EEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		FBD58BBE28B9437700F3FBB1 /* CeibaUTTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeibaUTTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD58BC928B9465F00F3FBB1 /* WebServiceUT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceUT.swift; sourceTree = "<group>"; };
 		FBD58BCD28B996B800F3FBB1 /* ProgressView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView2.swift; sourceTree = "<group>"; };
+		FBDF3FE628CBEFE200D91BA9 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 				FB96383B28B9231600F06EEA /* UserPostsView.swift */,
 				FB96383D28B92D4500F06EEA /* ImageView.swift */,
 				FBD58BCD28B996B800F3FBB1 /* ProgressView2.swift */,
+				FBDF3FE628CBEFE200D91BA9 /* MessageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				FB96383128B9092300F06EEA /* Constants.swift */,
+				FB6844C328CBFEF900D7F5BA /* ApiClient.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -269,7 +275,9 @@
 				FB96383C28B9231600F06EEA /* UserPostsView.swift in Sources */,
 				FB96383528B90A9200F06EEA /* WebService.swift in Sources */,
 				FB96383228B9092300F06EEA /* Constants.swift in Sources */,
+				FBDF3FE728CBEFE200D91BA9 /* MessageView.swift in Sources */,
 				FB96381F28B906A600F06EEA /* ContentView.swift in Sources */,
+				FB6844C428CBFEF900D7F5BA /* ApiClient.swift in Sources */,
 				FB96382C28B9070700F06EEA /* UserModel.swift in Sources */,
 				FB96383A28B922A600F06EEA /* PostsViewModel.swift in Sources */,
 				FB96382E28B9089100F06EEA /* UserPost.swift in Sources */,

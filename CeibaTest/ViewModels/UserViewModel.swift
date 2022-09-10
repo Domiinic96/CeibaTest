@@ -6,22 +6,28 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 class UserViewModel: ObservableObject {
-    
+  
     @Published var users: [UserModel] = [UserModel]()
     private let webservice = WebService()
+    @Published var error2: Error?
+    @Published var isProgressing: Bool = false
+    @Published var presentAlert: Bool = false
     
     init() {
         getUsers()
     }
     
-    private func getUsers(){
+    func getUsers(){
         
+        self.isProgressing = true
+        self.presentAlert = false
         guard let _ = UserDefaults.standard.value(forKey: Constants.key) else{
             webservice.getUsers { users, error in
-                if let users = users, error == nil {
+                if let users = users {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         do {
                             try self.saveUsersInfo(value: users)
@@ -30,6 +36,15 @@ class UserViewModel: ObservableObject {
                         }
                         return
                     }
+                }
+                
+                if let error = error{
+                    DispatchQueue.main.async {
+                        self.isProgressing = false
+                        self.presentAlert = true
+                        self.error2 = error
+                    }
+                    
                 }
             }
             return
@@ -42,8 +57,8 @@ class UserViewModel: ObservableObject {
             let placesData =  try JSONEncoder().encode(value)
             UserDefaults.standard.set(placesData, forKey: Constants.key)
             getUserinfo()
-        } catch  {
-            print(error.localizedDescription)
+        } catch let err as NSError {
+            self.error2 = err
         }
     }
     
@@ -52,8 +67,11 @@ class UserViewModel: ObservableObject {
        
         do {
             self.users = try JSONDecoder().decode([UserModel].self, from: orderData)
-        } catch  {
-            print(error.localizedDescription)
+            self.isProgressing = false
+            self.presentAlert = false
+            self.error2 = nil
+        } catch let err as NSError {
+            self.error2 = err
         }
     }
 
