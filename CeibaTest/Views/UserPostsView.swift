@@ -11,6 +11,7 @@ struct UserPostsView: View {
     
     let user: UserModel
     @ObservedObject var postsViewModel = PostsViewModel()
+    @Environment(\.presentationMode) var presentationMode
     
     init(_ user: UserModel) {
         self.user = user
@@ -23,17 +24,21 @@ struct UserPostsView: View {
             VStack(alignment: .leading){
                 HStack{
                     ImageView(imageName: Constants.personImageName)
-                Text(user.name).font(.system(size: 18, weight: .semibold, design: .default))
+                    Text(user.name).font(.system(size: 12, weight: .semibold, design: .default))
                 }
                 HStack{
                     ImageView(imageName: Constants.letterImageName)
-                Text(user.email).font(.system(size: 18, weight: .semibold, design: .default))
+                    Text(user.email).font(.system(size: 12, weight: .semibold, design: .default))
                 }
                 HStack{
                     ImageView(imageName: Constants.phoneImageName)
-                Text(user.phone).font(.system(size: 18, weight: .semibold, design: .default))
+                    Text(user.phone).font(.system(size: 12, weight: .semibold, design: .default))
                 }
-            }
+                
+            }.padding()
+            .overlay(RoundedRectangle(cornerRadius: 20)
+                .stroke(Constants.appColor, lineWidth: 1))
+            .padding()
                 
             if postsViewModel.usersPots.count > 0{
                 ScrollView{
@@ -50,8 +55,10 @@ struct UserPostsView: View {
                             Text(post.body)
                                 .padding()
                         }.padding()
+                            
                             .frame(width: Constants.screenSize.width * 0.9)
                             .background(Color.white)
+                            .cornerRadius(10)
                             .clipped()
                             .padding()
                             .shadow(color: .black, radius: 2, x: 0, y: 0)
@@ -67,9 +74,21 @@ struct UserPostsView: View {
             
         }.toolbar(content: {
             ToolbarItem(placement: .navigationBarTrailing) {
-                Image(systemName: Constants.reloadIcon).onTapGesture {
+                Image(systemName: Constants.reloadIcon)
+                    .onTapGesture {
                     self.postsViewModel.getPosts(forUser: user.id)
-                }
+                    }.foregroundColor(.white)
+                    .disabled(!self.postsViewModel.usersPots.isEmpty)
+            }
+            
+            ToolbarItem(placement: .navigationBarLeading) {
+                
+                Button {
+                    self.presentationMode.wrappedValue.dismiss()
+                } label: {
+                    Image(systemName: Constants.backButtonImage)
+                    Text("back")
+                }.foregroundColor(.white)
             }
         })
         .overlay(postsViewModel.isFetchingData ? AnyView(ProgressView2()) : AnyView(EmptyView()))
@@ -92,6 +111,7 @@ struct UserPostsView: View {
             } message: {
                 Text(self.postsViewModel.error2?.localizedDescription ?? "")
             }
+            .navigationBarBackButtonHidden(true)
    
     }
     

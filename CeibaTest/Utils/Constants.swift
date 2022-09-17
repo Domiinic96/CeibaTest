@@ -30,5 +30,6 @@ class Constants{
     static let OK = "Ok"
     static let RELOAD = "Reload"
     static let reloadIcon = "arrow.triangle.2.circlepath.circle"
+    static let backButtonImage = "arrow.backward"
     
 }

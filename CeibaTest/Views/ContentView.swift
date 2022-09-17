@@ -42,11 +42,13 @@ struct ContentView: View {
                                     HStack{
                                         ImageView(imageName: Constants.phoneImageName)
                                         Text(user.phone)
+                                            .font(.system(size: 15, weight: .regular, design: .default))
                                     }
                                     
                                     HStack{
                                         ImageView(imageName: Constants.letterImageName)
                                         Text(user.email)
+                                            .font(.system(size: 15, weight: .regular, design: .default))
                                     }
                                 }
                                 Spacer()
@@ -56,17 +58,24 @@ struct ContentView: View {
                                         UserPostsView(user)
                                     } label: {
                                         Text(Constants.watchPosts)
-                                            .font(.system(size: 12))
+                                            .font(.system(size: 10))
                                             .foregroundColor(Constants.appColor)
-                                    }
+                                    }.padding(5)
+                                        .overlay(RoundedRectangle(cornerRadius: 20)
+                                                        .stroke(Constants.appColor, lineWidth: 1))
+                                    
+                                        
                                 }
                             }.padding()
                                 .background(.white)
+                                .cornerRadius(10)
                                 .frame(width: Constants.screenSize.width * 0.9, height: Constants.screenSize.height * 0.15)
                                 .clipped()
                                 .shadow(color: .black, radius: 2, x: 0, y: 0)
                                 .padding()
-                                .animation(Animation.spring(), value: self.searchTerm)
+                                .animation(Animation.spring().speed(0.2), value: self.searchTerm)
+                                
+                                
                                
                         }
                     }
