@@ -28,39 +28,45 @@ class WebServiceUT: XCTestCase {
     func testGetPostsByUser() throws {
         self.expectation = expectation(description: "posts")
         webService!.getPost(forUser: 1, completion: { posts, error in
-            self.posts = posts!
-            self.expectation.fulfill()
-            XCTAssertTrue(!posts!.isEmpty && error == nil)
+            if let posts = posts{
+                self.posts = posts
+                self.expectation.fulfill()
+                XCTAssertTrue(!posts.isEmpty && error == nil)
+            }
+           
         })
+        wait(for: [expectation], timeout: 10.0)
         
-        waitForExpectations(timeout: 4) { (error) in
-            XCTAssertNotNil(self.posts)
-         }
+//        waitForExpectations(timeout: 4) { (error) in
+//            XCTAssertNotNil(self.posts)
+//         }
     }
     
     func testGetAllUsers() throws{
         self.expectation = expectation(description: "posts")
         webService!.getUsers { users, error in
-            self.users = users
-            self.expectation.fulfill()
-            XCTAssertTrue(!users!.isEmpty && error == nil)
+            if let users = users{
+                self.users = users
+                self.expectation.fulfill()
+                XCTAssertTrue(!users.isEmpty && error == nil)
+            }
+          
         }
-        
-        waitForExpectations(timeout: 4) { (error) in
-            XCTAssertNotNil(self.users)
-         }
+        wait(for: [expectation], timeout: 10.0)
     }
     
     func testGetAllPosts() throws{
         self.expectation = expectation(description: "posts")
         webService!.getPost { posts, error in
-            self.posts = posts
-            self.expectation.fulfill()
-            XCTAssertTrue(!posts!.isEmpty && error == nil)
+            
+            if let posts = posts{
+                self.posts = posts
+                self.expectation.fulfill()
+                XCTAssertTrue(!posts.isEmpty && error == nil)
+            }
+            
         }
-        
-        waitForExpectations(timeout: 3) { (error) in
-            XCTAssertNotNil(self.posts)
-         }
+        wait(for: [expectation], timeout: 10.0)
+
     }
 }
