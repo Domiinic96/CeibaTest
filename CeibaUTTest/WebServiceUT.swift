@@ -36,10 +36,7 @@ class WebServiceUT: XCTestCase {
            
         })
         wait(for: [expectation], timeout: 10.0)
-        
-//        waitForExpectations(timeout: 4) { (error) in
-//            XCTAssertNotNil(self.posts)
-//         }
+
     }
     
     func testGetAllUsers() throws{
