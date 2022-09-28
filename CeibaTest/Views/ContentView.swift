@@ -73,7 +73,7 @@ struct ContentView: View {
                                 .clipped()
                                 .shadow(color: .black, radius: 2, x: 0, y: 0)
                                 .padding()
-                                .animation(Animation.spring().speed(0.2), value: self.searchTerm)
+                                .animation(Animation.spring().speed(0.5), value: self.searchTerm)
                                 
                                 
                                
