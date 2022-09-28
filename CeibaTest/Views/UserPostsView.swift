@@ -23,15 +23,15 @@ struct UserPostsView: View {
             VStack(alignment: .leading){
                 HStack{
                     ImageView(imageName: Constants.personImageName)
-                    Text(user.name).font(.system(size: 12, weight: .semibold, design: .default))
+                    CustomTextView(name: user.name)
                 }
                 HStack{
                     ImageView(imageName: Constants.letterImageName)
-                    Text(user.email).font(.system(size: 12, weight: .semibold, design: .default))
+                    CustomTextView(name: user.email)
                 }
                 HStack{
                     ImageView(imageName: Constants.phoneImageName)
-                    Text(user.phone).font(.system(size: 12, weight: .semibold, design: .default))
+                    CustomTextView(name: user.phone)
                 }
                 
             }.padding()
@@ -86,7 +86,7 @@ struct UserPostsView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     Image(systemName: Constants.backButtonImage)
-                    Text("back")
+                    Text(Constants.back)
                 }.foregroundColor(.white)
             }
         })
