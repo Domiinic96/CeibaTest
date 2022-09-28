@@ -15,7 +15,6 @@ struct UserPostsView: View {
     
     init(_ user: UserModel) {
         self.user = user
-        self.searchPosts(id: user.id)
     }
     
     var body: some View {
@@ -112,15 +111,11 @@ struct UserPostsView: View {
                 Text(self.postsViewModel.error2?.localizedDescription ?? "")
             }
             .navigationBarBackButtonHidden(true)
+            .onAppear{
+                self.postsViewModel.getPosts(forUser: self.user.id)
+            }
    
     }
-    
-    private func searchPosts(id: Int){
-        
-        postsViewModel.getPosts(forUser: id)
-    }
-    
-    
 }
 
 struct UserPostsView_Previews: PreviewProvider {
